@@ -10,11 +10,11 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2" data-testid="link-footer-logo">
-              <Globe className="h-8 w-8 text-accent" />
+            <Link href="/" className="flex items-center gap-2.5" data-testid="link-footer-logo">
+              <img src="/wytf-mark.png" alt="Western Youth Tech Foundation" className="h-12 w-auto object-contain" />
               <div>
-                <span className="text-xl font-bold tracking-tight text-accent block">Western Youth Tech</span>
-                <span className="text-primary-foreground/80 text-xs font-semibold uppercase tracking-wider block">Youth Foundation</span>
+                <span className="text-xl font-bold tracking-tight text-accent block leading-none">Western Youth Tech</span>
+                <span className="text-primary-foreground/80 text-xs font-semibold uppercase tracking-wider block mt-0.5">Foundation</span>
               </div>
             </Link>
             <p className="text-sm text-primary-foreground/80 max-w-xs leading-relaxed">

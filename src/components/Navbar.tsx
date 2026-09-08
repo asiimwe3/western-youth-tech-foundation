@@ -31,14 +31,12 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2" data-testid="link-logo">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <Globe className="h-6 w-6" />
-            </div>
-            <span className="text-xl font-bold tracking-tight text-accent">
+          <Link href="/" className="flex items-center gap-2.5" data-testid="link-logo">
+            <img src="/wytf-mark.png" alt="Western Youth Tech Foundation" className="h-11 w-auto object-contain" />
+            <span className="text-xl font-bold tracking-tight text-accent leading-none">
               Western Youth Tech
-              <span className="text-primary block text-xs font-semibold uppercase tracking-wider">
-                Youth Foundation
+              <span className="text-primary block text-xs font-semibold uppercase tracking-wider mt-0.5">
+                Foundation
               </span>
             </span>
           </Link>
