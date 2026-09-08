@@ -8,17 +8,17 @@ export default function VisionMission() {
     {
       icon: <Globe2 className="h-6 w-6 text-accent" />,
       title: "State-of-the-Art Tech Hubs",
-      desc: "Establish technological hub facilities providing accessible ICT and vocational training in Kyenjojo and surrounding East African regions."
+      desc: "Establish modern tech hubs providing accessible ICT and vocational training — starting with the flagship hub in Kyenjojo and expanding across the Tooro region's districts."
     },
     {
       icon: <Target className="h-6 w-6 text-accent" />,
       title: "Industry-Aligned Curricula",
-      desc: "Design and deploy dynamic curricula covering Web Design, Data Analysis, Digital Marketing, and local vocational trades — updated in real-time with global standards."
+      desc: "Deploy curricula covering Web & App Development, Data Analysis, Digital Marketing, and local trades — co-designed with DeryCode's working engineers around what Ugandan employers and clients actually need."
     },
     {
       icon: <TrendingUp className="h-6 w-6 text-accent" />,
       title: "Employment Pipelines & Venture Incubation",
-      desc: "Foster regional and international employment pipelines, remote work opportunities, and venture incubation frameworks for certified graduates."
+      desc: "Place certified graduates into salaried roles, remote work, and DeryCode's client pipeline — plus incubate graduate-owned startups with mentorship and first contracts."
     },
     {
       icon: <Users2 className="h-6 w-6 text-accent" />,
@@ -48,14 +48,14 @@ export default function VisionMission() {
       phase: "Phase 2 — Year 2",
       title: "Spoke Expansion",
       goal: "800 youth trained",
-      desc: "Activate Branch Spoke nodes across surrounding Western Uganda districts. Refine curricula based on Year 1 graduate outcomes. Grow social enterprise revenue toward the 40% target.",
+      desc: "Activate Branch Spoke nodes across the Tooro region — Kabarole, Kyegegwa, Kamwenge, Kasese, and Bundibugyo. Refine curricula based on Year 1 graduate outcomes. Grow social enterprise revenue toward the 40% target.",
       color: "border-secondary bg-secondary/5"
     },
     {
       phase: "Phase 3 — Year 3",
-      title: "East Africa Franchise Blueprint",
+      title: "National Uganda Expansion",
       goal: "2,500+ specialists",
-      desc: "Following a validated, hyper-profitable social enterprise proof of concept in Kyenjojo, franchise the operational blueprint across rural districts of the wider East African Community (EAC).",
+      desc: "With a proven Kyenjojo model, replicate the blueprint across Uganda — Mbarara, Fort Portal, Masaka, Gulu — building a national network before extending to the wider East African Community.",
       color: "border-accent bg-accent/5"
     }
   ];
@@ -105,7 +105,7 @@ export default function VisionMission() {
               </div>
               <h2 className="text-3xl font-bold text-foreground">Our Vision</h2>
               <p className="text-xl font-medium leading-relaxed text-muted-foreground">
-                "To cultivate a globally interconnected generation of <span className="text-primary font-bold">empowered, digitally proficient, and economically independent youth</span> who lead innovation and sustainable development within their communities."
+                "A Uganda where talent is born everywhere — and opportunity lives next door. We envision <span className="text-primary font-bold">Western Uganda as the country's next technology corridor</span>: a generation of young Ugandan engineers, builders, and business owners transforming their own districts from within."
               </p>
               <p className="text-sm text-muted-foreground italic">— Article II, Section 1, Western Youth Tech Foundation Constitution</p>
             </motion.div>
@@ -123,7 +123,7 @@ export default function VisionMission() {
               </div>
               <h2 className="text-3xl font-bold text-foreground">Our Mission</h2>
               <p className="text-xl font-medium leading-relaxed text-muted-foreground">
-                "To democratize access to high-quality digital education, technical competencies, and vocational skills, <span className="text-primary font-bold">bridging the global digital divide</span> and equipping youth in underserved regions with the practical tools necessary for modern workforce integration and entrepreneurial success."
+                "To equip every young Ugandan — starting in the Tooro region — with <span className="text-primary font-bold">practical, income-ready digital and vocational skills</span>, then connect them directly to real jobs, real clients, and real capital through DeryCode's business network, so they build Uganda's economy from the ground up."
               </p>
               <p className="text-sm text-muted-foreground italic">— Article II, Section 2, Western Youth Tech Foundation Constitution</p>
             </motion.div>
@@ -137,7 +137,7 @@ export default function VisionMission() {
         <div className="container px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Strategic Objectives</h2>
-            <p className="text-muted-foreground text-lg">Four concrete mandates guiding our operations across East Africa.</p>
+            <p className="text-muted-foreground text-lg">Four concrete mandates guiding our operations across Western Uganda.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {objectives.map((obj, i) => (
@@ -178,17 +178,17 @@ export default function VisionMission() {
               {
                 num: "01",
                 title: "Equitable Access",
-                desc: "Removing geographic and economic constraints to bring technical training to the grassroots level in Kyenjojo and beyond — targeting youth aged 16-30 regardless of prior financial background."
+                desc: "Training brought directly to grassroots Uganda — youth aged 16-30 in Kyenjojo and neighboring districts, regardless of school fees or family income."
               },
               {
                 num: "02",
                 title: "Market Relevancy",
-                desc: "Keeping curricula completely dynamic, updated in real-time alongside global industry standards to ensure graduates are competitive in the international digital economy immediately upon graduation."
+                desc: "Graduates learn on real, paying Ugandan client projects — making them competitive in Uganda's digital economy from day one, with international remote work as an upgrade, not an escape."
               },
               {
                 num: "03",
                 title: "Sustained Independence",
-                desc: "Graduating students directly into independent contracting, remote freelance careers, or micro-enterprise ownership — creating true economic self-sufficiency, not dependency."
+                desc: "Graduates launch into jobs, freelance careers, or their own businesses serving Ugandan companies — self-sufficiency built at home, keeping talent and value inside Uganda."
               }
             ].map((pillar, idx) => (
               <div key={idx} className="bg-white/10 p-8 rounded-2xl border border-white/20 relative overflow-hidden group" data-testid={`pillar-${idx}`}>
@@ -210,7 +210,7 @@ export default function VisionMission() {
             <Flag className="h-12 w-12 mx-auto mb-6 text-secondary" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">3-Year Scaling Strategy</h2>
             <p className="text-muted-foreground text-xl">
-              From a pilot hub serving 200 youth to an integrated multi-spoke East African framework training 2,500+ certified specialists.
+              From a pilot hub serving 200 youth in Kyenjojo to a national Ugandan network training 2,500+ certified specialists — Uganda first, then East Africa.
             </p>
           </div>
 
@@ -276,7 +276,7 @@ export default function VisionMission() {
           <Rocket className="h-16 w-16 mx-auto text-accent" />
           <h2 className="text-3xl md:text-4xl font-bold">Help Us Reach These Goals</h2>
           <p className="text-lg text-muted-foreground">
-            Our mission requires resources, mentorship, and advocacy. Join us in building this future for East African youth.
+            Investors, donors, and partners: your capital and mentorship convert directly into Uganda's next generation of tech talent. Youth: apply today — your future is being built here at home.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" data-testid="vision-btn-donate">

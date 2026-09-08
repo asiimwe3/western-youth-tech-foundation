@@ -27,7 +27,7 @@ export default function Programs() {
     },
     {
       title: "Data Analysis & Business Intelligence",
-      description: "Covers advanced data manipulation, spreadsheet modeling, SQL foundations, and interactive data visualization techniques. Addresses the enormous global demand for administrative, operational, and financial data cleaning professionals.",
+      description: "Covers spreadsheets, SQL foundations, and interactive data visualization — the exact toolkit Ugandan banks, SACCOs, clinics, and SMEs need for clean books and smart decisions.",
       duration: "10 weeks",
       ages: "16–30",
       outcomes: [
@@ -246,7 +246,7 @@ export default function Programs() {
               <Card className="bg-secondary text-secondary-foreground p-6 rounded-2xl border-0">
                 <h3 className="text-xl font-bold mb-2">Year 3 Goal</h3>
                 <p className="text-4xl font-extrabold text-white mb-1">2,500+</p>
-                <p className="text-secondary-foreground/80">Certified specialists across multi-spoke East African framework</p>
+                <p className="text-secondary-foreground/80">Certified specialists across a national Ugandan network</p>
               </Card>
             </div>
           </div>

@@ -36,21 +36,21 @@ export default function Home() {
           >
             <motion.div variants={fadeIn} className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-white/90 text-sm font-medium">
               <MapPin className="h-4 w-4 text-accent" />
-              Kyenjojo District, Uganda — Engineering Global Potential
+              Western Uganda · Tooro Region — Uganda First, Tech for Uganda
             </motion.div>
 
             <motion.h1 
               variants={fadeIn}
               className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight"
             >
-              Empowering the Next Generation of <span className="text-accent">Global Innovators</span>
+              Uganda First: Powering Western Uganda's Next Generation of <span className="text-accent">Tech Innovators</span>
             </motion.h1>
             
             <motion.p 
               variants={fadeIn}
               className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto font-medium"
             >
-              We democratize access to high-quality digital education and vocational skills, bridging the global digital divide and equipping youth in underserved East African communities with tools for modern workforce integration and entrepreneurial success.
+              Based in Kyenjojo and rooted in the Tooro region, we train young Ugandans in real digital skills and trades — then plug them straight into Uganda's growing tech economy through jobs, freelance work, and their own businesses. Backed by DeryCode Technologies, our graduates learn on real client projects, not classroom theory.
             </motion.p>
             
             <motion.div 
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Disciplinary Pathways to Success</h2>
             <p className="text-lg text-muted-foreground">
-              Our industry-aligned curricula are optimized for direct financial monetization — from international freelance careers to local enterprise ownership.
+              Four career tracks built for Uganda's economy — software, data, digital marketing, and skilled trades. Every graduate finishes with a portfolio of real Ugandan client work and a path to income.
             </p>
           </div>
 
@@ -106,25 +106,25 @@ export default function Home() {
             {[
               {
                 title: "Full-Stack Web Development",
-                desc: "UI/UX principles, HTML5, CSS3, and modern JavaScript frameworks. Students exit with a live portfolio of client-ready prototypes.",
+                desc: "UI/UX principles, HTML5, CSS3, and modern JavaScript frameworks — taught by working DeryCode engineers. Students exit with a live portfolio built on real Ugandan client projects.",
                 icon: <Code className="h-6 w-6 text-primary" />,
                 image: "/program-web.png"
               },
               {
                 title: "Data Analysis & Business Intelligence",
-                desc: "Advanced data manipulation, spreadsheet modeling, SQL, and interactive data visualization addressing global demand for data professionals.",
+                desc: "Spreadsheets, SQL, and data visualization — the exact skills Ugandan banks, SACCOs, and SMEs are hiring and outsourcing for right now.",
                 icon: <LineChart className="h-6 w-6 text-secondary" />,
                 image: "/program-data.png"
               },
               {
                 title: "Digital Marketing Mastery",
-                desc: "SEO, social media monetization, conversion rate optimization, and advanced analytics. Graduates service small and medium businesses internationally.",
+                desc: "SEO, social media, and conversion optimization. Graduates service real Ugandan SMEs — shops, hotels, schools — and can scale to international remote clients.",
                 icon: <Megaphone className="h-6 w-6 text-accent" />,
                 image: "/program-marketing.png"
               },
               {
                 title: "Advanced Vocational & Skilled Trades",
-                desc: "Electrical installations, sustainable solar grid deployment, mechanical repairs, and agro-tech operations tailored to Western Uganda's economy.",
+                desc: "Electrical installation, solar deployment, mechanical repair, and agro-tech — the trades powering Western Uganda's farms, factories, and homes.",
                 icon: <Wrench className="h-6 w-6 text-primary" />,
                 image: "/program-vocational.png"
               }
@@ -234,24 +234,24 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Three Foundational Pillars</h2>
-            <p className="text-lg text-muted-foreground">Designed to generate measurable systemic change across East Africa.</p>
+            <p className="text-lg text-muted-foreground">Three pillars designed to generate measurable, lasting change across Western Uganda — one district at a time.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 icon: <Globe className="h-10 w-10 text-primary" />,
                 title: "Equitable Access",
-                desc: "Removing geographic and economic constraints to bring technical training directly to the grassroots level in Kyenjojo and beyond."
+                desc: "No Ugandan youth left behind by geography or school fees. We bring technical training directly to towns and villages across the Tooro region — starting in Kyenjojo."
               },
               {
                 icon: <BookOpen className="h-10 w-10 text-secondary" />,
                 title: "Market Relevancy",
-                desc: "Keeping curricula completely dynamic, updated in real-time alongside global industry standards to ensure graduates are immediately employable."
+                desc: "Curricula built with DeryCode's working engineers and updated against what Uganda's employers actually hire for — so graduates are employable the day they certify."
               },
               {
                 icon: <Users className="h-10 w-10 text-accent" />,
                 title: "Sustained Independence",
-                desc: "Graduating students directly into independent contracting, remote freelance careers, or micro-enterprise ownership — true economic empowerment."
+                desc: "Graduates exit into salaried jobs, remote freelance careers, or their own micro-enterprises serving Ugandan businesses — economic independence at home, not migration."
               }
             ].map((pillar, i) => (
               <motion.div
@@ -277,9 +277,9 @@ export default function Home() {
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "32px 32px" }} />
         <div className="container relative z-10 px-4 md:px-6 text-center max-w-4xl mx-auto">
           <Globe className="h-16 w-16 mx-auto mb-8 text-accent opacity-80" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Partner in Transforming Youth</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Invest in Uganda's Next Tech Generation</h2>
           <p className="text-xl text-primary-foreground/90 mb-4 max-w-2xl mx-auto">
-            Join the Western Youth Tech Foundation as an institutional partner in transforming regional youth talent into global economic innovators.
+            Investors and donors: fund a transparent, high-impact pipeline that turns Western Ugandan youth into certified tech professionals — with DeryCode Technologies' business network ready to absorb them. Youth in the Tooro region: this is your invitation to learn real skills, earn from real clients, and build Uganda's future at home.
           </p>
           <p className="text-primary-foreground/70 mb-10 flex items-center justify-center gap-2 text-sm">
             <Mail className="h-4 w-4" /> deriick.asimwe849@gmail.com &nbsp;|&nbsp; <MapPin className="h-4 w-4" /> Central Block, Kyenjojo District, Western Uganda

@@ -33,7 +33,7 @@ export default function About() {
     },
     {
       title: "Market Excellence",
-      description: "Curricula completely dynamic and updated in real-time alongside global industry standards, ensuring every graduate is immediately workforce-ready.",
+      description: "Curricula built with DeryCode's practising engineers around real Ugandan market demand — every graduate workforce-ready on day one.",
       icon: <Award className="h-8 w-8 text-accent" />
     }
   ];
@@ -72,7 +72,7 @@ export default function About() {
               Bridging the Digital Divide.
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Established in Kyenjojo District, Uganda, the Western Youth Tech Foundation addresses the expanding chasm between traditional educational systems and the highly dynamic requirements of the contemporary global digital economy.
+              Established in Kyenjojo District, the heart of Uganda's Tooro region, the Western Youth Tech Foundation exists to close one gap: Uganda's young people are the youngest, fastest-growing population in the world — yet too few get practical tech skills. We change that, starting in Western Uganda, by pairing youth with the real tools, trainers, and clients of Uganda's digital economy.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function About() {
                   Uganda's rural areas like Kyenjojo District remain constrained by limited institutional infrastructure, high data connectivity costs, and a lack of skilled practical facilitators. Western Youth Tech fills this physical vacuum through localized technological hubs built to serve the communities directly.
                 </p>
                 <p>
-                  The international outsourcing market for digital services is valued in the hundreds of billions of dollars. Young talent in developing nations is systemically under-utilized due to lack of advanced skills and reliable access points. The Foundation positions itself directly at this intersection to tap into the high momentum of the global remote workforce.
+                  Uganda has one of the world's youngest populations — over 75% under 30 — while its digital economy is growing faster than its skilled workforce. For investors and donors, that is a rare, high-yield opportunity: capital invested here converts into certified talent that Ugandan businesses are already hiring. The Foundation, backed by DeryCode Technologies' client network, sits exactly at that intersection.
                 </p>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function About() {
         <div className="container px-4 md:px-6 max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Executive Summary</h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            "The Western Youth Tech Foundation addresses a critical global imbalance: the expanding chasm between rigid, traditional educational paradigms and the highly dynamic, fluid requirements of the contemporary global digital economy. Focusing operations out of Uganda, the Foundation initiates an agile ecosystem providing technical mastery, professional development, and international marketplace connectivity to marginalized youth."
+            "The Western Youth Tech Foundation puts Uganda first. We exist to close the gap between Uganda's enormous young talent and the practical digital skills today's economy demands. Operating from Kyenjojo in the Tooro region, we provide technical mastery, real client experience through DeryCode Technologies, and direct pathways into Ugandan jobs, freelance income, and youth-owned enterprise."
           </p>
         </div>
       </section>

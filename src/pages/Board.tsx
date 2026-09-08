@@ -88,7 +88,7 @@ export default function Board() {
             Leadership & Governance
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-            Our Board of Directors represents a diverse coalition of tech industry veterans, educators, and community leaders united by a single mission: to democratize digital opportunity for East African youth.
+            Our Board of Directors represents a coalition of tech industry veterans, educators, and community leaders united by a single mission: to build Uganda's next tech generation — starting in Western Uganda.
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
@@ -210,7 +210,7 @@ export default function Board() {
             The Community Advisory Council ensures hyper-local relevance, tribal leadership alignment, and student welfare safety nets across all regions we serve.
           </p>
           <p className="text-primary-foreground/70 mb-8">
-            Are you a tech leader or community figure passionate about education equity in East Africa? We actively seek Council members with deep local knowledge and community connections.
+            Are you a tech leader or community figure passionate about education equity in Uganda? We actively seek Council members with deep local knowledge of the Tooro region and its communities.
           </p>
           <a 
             href="mailto:deriick.asimwe849@gmail.com" 

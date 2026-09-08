@@ -84,8 +84,8 @@ export default function Fundraising() {
 
   const fundingStreams = [
     { icon: <Globe className="h-6 w-6 text-primary" />, title: "Philanthropic Donations", desc: "Individual and institutional donors directly fund student cohorts, hardware, and curriculum development." },
-    { icon: <Handshake className="h-6 w-6 text-secondary" />, title: "Corporate Sponsorships", desc: "CSR partnerships with tech companies for matching gifts, hardware donations, and employee mentorship programs." },
-    { icon: <TrendingUp className="h-6 w-6 text-accent" />, title: "International Development Grants", desc: "Bilateral development grants and foundational donor networks seeking high-yield, verifiable humanitarian returns." },
+    { icon: <Handshake className="h-6 w-6 text-secondary" />, title: "Ugandan Corporate Partnerships", desc: "CSR partnerships with Ugandan companies — sponsor a cohort, hire our graduates, donate hardware, or run employee mentorship. Build your brand while building Uganda's talent pipeline." },
+    { icon: <TrendingUp className="h-6 w-6 text-accent" />, title: "Impact Investment & Grants", desc: "Investors and development partners seeking verifiable, high-yield social returns — quarterly impact reports, graduate income tracking, and first-look access to graduate talent for hiring pipelines." },
     { icon: <Building2 className="h-6 w-6 text-primary" />, title: "Social Enterprise Revenue", desc: "Our in-house digital production agency uses senior students to execute paid outsourcing contracts, reinvesting into free cohorts." },
   ];
 
@@ -126,8 +126,8 @@ export default function Fundraising() {
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm font-medium mb-6">
             <Heart className="h-4 w-4 text-accent" /> Support Our Mission
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Invest in Africa's <span className="text-accent">Tech Future</span></h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">Your contribution directly funds digital education, vocational training, and entrepreneurship programs for youth in Kyenjojo, Uganda.</p>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Invest in <span className="text-accent">Uganda's</span> Tech Future</h1>
+          <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">Every contribution funds digital education, vocational training, and entrepreneurship for youth in Kyenjojo and the Tooro region — with transparent, published impact metrics. Ugandan donors give via Mobile Money; international partners give by card or bank. Your capital becomes certified talent Uganda's businesses are already hiring.</p>
           <div className="flex flex-wrap justify-center gap-8 mt-10">
             {[["$150","trains one student for 3 months"],["$500","funds a full semester cohort"],["$2,000","equips a full computer lab station"],["$10,000","sponsors an entire annual cohort"]].map(([amt,desc]) => (
               <div key={amt} className="bg-white/10 border border-white/20 rounded-xl p-4 text-center min-w-32">
