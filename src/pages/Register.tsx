@@ -63,7 +63,7 @@ export default function Register() {
       const msg = encodeURIComponent(
         `Hello Western Youth Tech Foundation!\n\nNew Application:\nName: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nPhone: ${data.phone}\nProgram: ${data.program}\nDOB: ${data.dob}\nGender: ${data.gender}`
       );
-      window.open(`https://wa.me/256700000000?text=${msg}`, "_blank");
+      window.open(`https://wa.me/256763206675?text=${msg}`, "_blank");
       setSubmitted(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
