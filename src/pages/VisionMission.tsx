@@ -82,7 +82,7 @@ export default function VisionMission() {
             transition={{ delay: 0.1 }}
             className="text-xl text-primary-foreground/90"
           >
-            The vision and mission that drive every program, every partnership, and every graduate of the WorldTech Youth Foundation.
+            The vision and mission that drive every program, every partnership, and every graduate of the Western Youth Tech Foundation.
           </motion.p>
         </div>
       </section>
@@ -107,7 +107,7 @@ export default function VisionMission() {
               <p className="text-xl font-medium leading-relaxed text-muted-foreground">
                 "To cultivate a globally interconnected generation of <span className="text-primary font-bold">empowered, digitally proficient, and economically independent youth</span> who lead innovation and sustainable development within their communities."
               </p>
-              <p className="text-sm text-muted-foreground italic">— Article II, Section 1, WorldTech Youth Foundation Constitution</p>
+              <p className="text-sm text-muted-foreground italic">— Article II, Section 1, Western Youth Tech Foundation Constitution</p>
             </motion.div>
 
             {/* Mission */}
@@ -125,7 +125,7 @@ export default function VisionMission() {
               <p className="text-xl font-medium leading-relaxed text-muted-foreground">
                 "To democratize access to high-quality digital education, technical competencies, and vocational skills, <span className="text-primary font-bold">bridging the global digital divide</span> and equipping youth in underserved regions with the practical tools necessary for modern workforce integration and entrepreneurial success."
               </p>
-              <p className="text-sm text-muted-foreground italic">— Article II, Section 2, WorldTech Youth Foundation Constitution</p>
+              <p className="text-sm text-muted-foreground italic">— Article II, Section 2, Western Youth Tech Foundation Constitution</p>
             </motion.div>
 
           </div>

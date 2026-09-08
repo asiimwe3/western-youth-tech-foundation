@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: worldtech-youth-foundation
+    name: western-youth-tech-foundation
     env: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist

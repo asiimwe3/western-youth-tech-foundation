@@ -72,7 +72,7 @@ export default function About() {
               Bridging the Digital Divide.
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Established in Kyenjojo District, Uganda, the WorldTech Youth Foundation addresses the expanding chasm between traditional educational systems and the highly dynamic requirements of the contemporary global digital economy.
+              Established in Kyenjojo District, Uganda, the Western Youth Tech Foundation addresses the expanding chasm between traditional educational systems and the highly dynamic requirements of the contemporary global digital economy.
             </p>
           </div>
         </div>
@@ -90,10 +90,10 @@ export default function About() {
               <h2 className="text-3xl font-bold text-primary">Our Story</h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Headquartered in Kyenjojo District, Western Uganda — a country with one of the world's youngest populations — the WorldTech Youth Foundation was established to initiate an agile ecosystem providing technical mastery, professional development, and international marketplace connectivity to marginalized youth.
+                  Headquartered in Kyenjojo District, Western Uganda — a country with one of the world's youngest populations — the Western Youth Tech Foundation was established to initiate an agile ecosystem providing technical mastery, professional development, and international marketplace connectivity to marginalized youth.
                 </p>
                 <p>
-                  Uganda's rural areas like Kyenjojo District remain constrained by limited institutional infrastructure, high data connectivity costs, and a lack of skilled practical facilitators. WorldTech fills this physical vacuum through localized technological hubs built to serve the communities directly.
+                  Uganda's rural areas like Kyenjojo District remain constrained by limited institutional infrastructure, high data connectivity costs, and a lack of skilled practical facilitators. Western Youth Tech fills this physical vacuum through localized technological hubs built to serve the communities directly.
                 </p>
                 <p>
                   The international outsourcing market for digital services is valued in the hundreds of billions of dollars. Young talent in developing nations is systemically under-utilized due to lack of advanced skills and reliable access points. The Foundation positions itself directly at this intersection to tap into the high momentum of the global remote workforce.
@@ -109,7 +109,7 @@ export default function About() {
         <div className="container px-4 md:px-6 max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Executive Summary</h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            "The WorldTech Youth Foundation addresses a critical global imbalance: the expanding chasm between rigid, traditional educational paradigms and the highly dynamic, fluid requirements of the contemporary global digital economy. Focusing operations out of Uganda, the Foundation initiates an agile ecosystem providing technical mastery, professional development, and international marketplace connectivity to marginalized youth."
+            "The Western Youth Tech Foundation addresses a critical global imbalance: the expanding chasm between rigid, traditional educational paradigms and the highly dynamic, fluid requirements of the contemporary global digital economy. Focusing operations out of Uganda, the Foundation initiates an agile ecosystem providing technical mastery, professional development, and international marketplace connectivity to marginalized youth."
           </p>
         </div>
       </section>

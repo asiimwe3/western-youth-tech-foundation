@@ -8,7 +8,7 @@ export default function Board() {
       name: "Asiimwe Derick",
       title: "Chief Executive Officer (CEO)",
       role: "Founder & Executive Lead",
-      bio: "The visionary behind WorldTech Youth Foundation, Asiimwe Derick established the organization in Kyenjojo District to address the critical digital skills gap affecting Uganda's youth. He oversees all strategic operations, partnership development, and regional program deployments across the region.",
+      bio: "The visionary behind Western Youth Tech Foundation, Asiimwe Derick established the organization in Kyenjojo District to address the critical digital skills gap affecting Uganda's youth. He oversees all strategic operations, partnership development, and regional program deployments across the region.",
       image: "/derick-asiimwe.jpg",
       mail: "deriick.asimwe849@gmail.com"
     },

@@ -36,7 +36,7 @@ export function Navbar() {
               <Globe className="h-6 w-6" />
             </div>
             <span className="text-xl font-bold tracking-tight text-accent">
-              WorldTech
+              Western Youth Tech
               <span className="text-primary block text-xs font-semibold uppercase tracking-wider">
                 Youth Foundation
               </span>

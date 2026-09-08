@@ -13,7 +13,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2" data-testid="link-footer-logo">
               <Globe className="h-8 w-8 text-accent" />
               <div>
-                <span className="text-xl font-bold tracking-tight text-accent block">WorldTech</span>
+                <span className="text-xl font-bold tracking-tight text-accent block">Western Youth Tech</span>
                 <span className="text-primary-foreground/80 text-xs font-semibold uppercase tracking-wider block">Youth Foundation</span>
               </div>
             </Link>
@@ -94,7 +94,7 @@ export function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} WorldTech Youth Foundation. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Western Youth Tech Foundation. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors" data-testid="link-privacy">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors" data-testid="link-terms">Terms of Service</a>

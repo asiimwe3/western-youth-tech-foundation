@@ -17,5 +17,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`WorldTech Youth Foundation running on port ${PORT}`);
+  console.log(`Western Youth Tech Foundation running on port ${PORT}`);
 });

@@ -39,7 +39,7 @@ const STORAGE_KEY = "wtyf_user";
 const SEED_ACCOUNTS: Array<UserProfile & { password: string }> = [
   {
     id: 1,
-    email: "admin@worldtechfoundation.org",
+    email: "admin@westernyouthtechfoundation.org",
     password: "wtyf2026",
     name: "Admin User",
     phone: "+256700000000",

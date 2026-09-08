@@ -108,7 +108,7 @@ export default function AuthPage() {
             <Globe className="h-7 w-7" />
           </div>
           <div>
-            <p className="text-xl font-bold">WorldTech</p>
+            <p className="text-xl font-bold">Western Youth Tech</p>
             <p className="text-xs font-semibold uppercase tracking-widest text-primary-foreground/70">Youth Foundation</p>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function AuthPage() {
         <div className="w-full max-w-md">
           <div className="flex items-center gap-2 mb-8 lg:hidden">
             <Globe className="h-7 w-7 text-primary" />
-            <span className="text-xl font-bold text-primary">WorldTech Youth Foundation</span>
+            <span className="text-xl font-bold text-primary">Western Youth Tech Foundation</span>
           </div>
 
           <Tabs defaultValue="login">
@@ -182,7 +182,7 @@ export default function AuthPage() {
               <Card className="border-border shadow-xl">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl">Create your account</CardTitle>
-                  <CardDescription>Join WorldTech and start saving today — free to sign up</CardDescription>
+                  <CardDescription>Join Western Youth Tech and start saving today — free to sign up</CardDescription>
                 </CardHeader>
                 <CardContent>
                   {signupError && (
@@ -217,7 +217,7 @@ export default function AuthPage() {
                         {signupLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" />Creating account…</> : "Create Free Account"}
                       </Button>
                       <p className="text-xs text-center text-muted-foreground">
-                        By signing up you agree to WorldTech's mission of empowering Uganda's youth through digital skills.
+                        By signing up you agree to Western Youth Tech's mission of empowering Uganda's youth through digital skills.
                       </p>
                     </form>
                   </Form>

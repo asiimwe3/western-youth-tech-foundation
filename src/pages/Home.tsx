@@ -279,7 +279,7 @@ export default function Home() {
           <Globe className="h-16 w-16 mx-auto mb-8 text-accent opacity-80" />
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Partner in Transforming Youth</h2>
           <p className="text-xl text-primary-foreground/90 mb-4 max-w-2xl mx-auto">
-            Join the WorldTech Youth Foundation as an institutional partner in transforming regional youth talent into global economic innovators.
+            Join the Western Youth Tech Foundation as an institutional partner in transforming regional youth talent into global economic innovators.
           </p>
           <p className="text-primary-foreground/70 mb-10 flex items-center justify-center gap-2 text-sm">
             <Mail className="h-4 w-4" /> deriick.asimwe849@gmail.com &nbsp;|&nbsp; <MapPin className="h-4 w-4" /> Central Block, Kyenjojo District, Western Uganda

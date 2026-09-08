@@ -1,4 +1,4 @@
-# Contributing to worldtech-youth-foundation
+# Contributing to western-youth-tech-foundation
 
 Thank you for your interest in contributing! This document outlines the process for contributing to this project.
 
@@ -7,8 +7,8 @@ Thank you for your interest in contributing! This document outlines the process 
 1. **Fork** the repository
 2. **Clone** your fork locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/worldtech-youth-foundation.git
-   cd worldtech-youth-foundation
+   git clone https://github.com/YOUR_USERNAME/western-youth-tech-foundation.git
+   cd western-youth-tech-foundation
    ```
 3. **Install** dependencies and set up your environment
 4. **Create** a branch for your feature:

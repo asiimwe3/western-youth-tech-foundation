@@ -60,7 +60,7 @@ export default function Register() {
     try {
       // Build WhatsApp registration message (no backend required)
       const msg = encodeURIComponent(
-        `Hello WorldTech Youth Foundation!\n\nNew Application:\nName: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nPhone: ${data.phone}\nProgram: ${data.program}\nDOB: ${data.dob}\nGender: ${data.gender}`
+        `Hello Western Youth Tech Foundation!\n\nNew Application:\nName: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nPhone: ${data.phone}\nProgram: ${data.program}\nDOB: ${data.dob}\nGender: ${data.gender}`
       );
       window.open(`https://wa.me/256700000000?text=${msg}`, "_blank");
       setSubmitted(true);
@@ -81,7 +81,7 @@ export default function Register() {
             </div>
             <h2 className="text-3xl font-bold text-foreground">Registration Confirmed!</h2>
             <p className="text-lg text-muted-foreground">
-              Your registration fee of <strong>UGX 10,000</strong> has been received. Welcome to the WorldTech Youth Foundation family!
+              Your registration fee of <strong>UGX 10,000</strong> has been received. Welcome to the Western Youth Tech Foundation family!
             </p>
             {paymentRef && (
               <p className="text-sm text-muted-foreground bg-muted rounded-lg px-4 py-2">
@@ -137,7 +137,7 @@ export default function Register() {
             Apply & Register
           </h1>
           <p className="text-xl text-secondary-foreground/90 leading-relaxed mb-4">
-            Join the next cohort of the WorldTech Youth Foundation. Complete the form below and pay the one-time registration fee to secure your place.
+            Join the next cohort of the Western Youth Tech Foundation. Complete the form below and pay the one-time registration fee to secure your place.
           </p>
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-5 py-2 text-white font-semibold text-lg">
             <CreditCard className="h-5 w-5 text-accent" />

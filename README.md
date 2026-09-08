@@ -1,6 +1,6 @@
-# worldtech-youth-foundation
+# western-youth-tech-foundation
 
-🌍 WorldTech Youth Foundation — nonprofit organization website with programs, events, donation portal, and volunteer registration. Vite + React.
+🌍 Western Youth Tech Foundation — nonprofit organization website with programs, events, donation portal, and volunteer registration. Vite + React.
 
 ## 🚀 Features
 
@@ -21,8 +21,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/asiimwe3/worldtech-youth-foundation.git
-cd worldtech-youth-foundation
+git clone https://github.com/asiimwe3/western-youth-tech-foundation.git
+cd western-youth-tech-foundation
 
 # Install dependencies
 npm install
@@ -40,7 +40,7 @@ npm run build
 ## 📁 Project Structure
 
 ```
-worldtech-youth-foundation/
+western-youth-tech-foundation/
 ├── src/          # Source code
 ├── docs/         # Documentation
 ├── public/       # Static assets
