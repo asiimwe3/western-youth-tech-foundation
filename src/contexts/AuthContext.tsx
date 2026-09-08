@@ -42,7 +42,7 @@ const SEED_ACCOUNTS: Array<UserProfile & { password: string }> = [
     email: "admin@westernyouthtechfoundation.org",
     password: "wtyf2026",
     name: "Admin User",
-    phone: "+256763206675",
+    phone: "+256762306675",
     role: "admin",
     planType: "premium",
     avatarUrl: null,

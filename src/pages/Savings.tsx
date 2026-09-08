@@ -83,7 +83,7 @@ export default function Savings() {
     setEnrollSuccess(true); setLoading(false);
     // WhatsApp notify
     const msg = encodeURIComponent(`🎉 New WTYF Savings Enrollment!\nName: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nPlan: ${data.planType} (UGX ${MONTHLY[data.planType].toLocaleString()}/mo)`);
-    window.open(`https://wa.me/256763206675?text=${msg}`, "_blank");
+    window.open(`https://wa.me/256762306675?text=${msg}`, "_blank");
   }
 
   async function onContribute(data: ContributeValues) {
@@ -96,7 +96,7 @@ export default function Savings() {
     saveAccount(acc);
     setContributeSuccess(true); setLoading(false);
     const msg = encodeURIComponent(`💰 WTYF Savings Contribution\nName: ${acc.name}\nEmail: ${acc.email}\nAmount: UGX ${amount.toLocaleString()}\nTotal Saved: UGX ${acc.totalSaved.toLocaleString()}`);
-    window.open(`https://wa.me/256763206675?text=${msg}`, "_blank");
+    window.open(`https://wa.me/256762306675?text=${msg}`, "_blank");
   }
 
   function checkAccount() {

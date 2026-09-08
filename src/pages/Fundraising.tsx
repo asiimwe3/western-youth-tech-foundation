@@ -24,7 +24,7 @@ const donationSchema = z.object({
 type DonationFormValues = z.infer<typeof donationSchema>;
 
 const PESAPAL_CONSUMER_KEY = import.meta.env.VITE_PESAPAL_CONSUMER_KEY;
-const WHATSAPP_NUMBER = "256763206675";
+const WHATSAPP_NUMBER = "256762306675";
 
 export default function Fundraising() {
   const [loading, setLoading] = useState(false);
