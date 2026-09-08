@@ -18,6 +18,7 @@ export function Navbar() {
     { href: "/vision-mission", label: "Vision & Mission" },
     { href: "/savings", label: "Save & Invest" },
     { href: "/board", label: "Board" },
+    { href: "/founders-story", label: "Founder's Story" },
   ];
 
   async function handleLogout() {

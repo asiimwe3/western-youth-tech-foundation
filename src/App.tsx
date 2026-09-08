@@ -17,6 +17,7 @@ import Fundraising from "@/pages/Fundraising";
 import Board from "@/pages/Board";
 import Register from "@/pages/Register";
 import Savings from "@/pages/Savings";
+import FoundersStory from "@/pages/FoundersStory";
 import AuthPage from "@/pages/AuthPage";
 import Dashboard from "@/pages/Dashboard";
 
@@ -39,6 +40,7 @@ function Router() {
           <Route path="/vision-mission" component={VisionMission} />
           <Route path="/fundraising" component={Fundraising} />
           <Route path="/board" component={Board} />
+          <Route path="/founders-story" component={FoundersStory} />
           <Route path="/register" component={Register} />
           <Route path="/savings" component={Savings} />
           <Route path="/login" component={AuthPage} />

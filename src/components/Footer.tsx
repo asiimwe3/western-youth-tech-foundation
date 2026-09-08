@@ -49,6 +49,9 @@ export function Footer() {
                 <Link href="/vision-mission" className="text-primary-foreground/80 hover:text-accent transition-colors" data-testid="link-footer-vision">Vision & Mission</Link>
               </li>
               <li>
+                <Link href="/founders-story" className="text-primary-foreground/80 hover:text-accent transition-colors" data-testid="link-footer-founder">Founder's Story</Link>
+              </li>
+              <li>
                 <Link href="/board" className="text-primary-foreground/80 hover:text-accent transition-colors" data-testid="link-footer-board">Board of Directors</Link>
               </li>
               <li>
