@@ -1,2 +1,32 @@
+# Western Youth Tech Foundation — https://western-youth-tech-foundation.vercel.app
+
 User-agent: *
 Allow: /
+Disallow: /dashboard
+Disallow: /login
+
+# Explicitly welcome major search + AI engines
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Block aggressive scrapers
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+
+Sitemap: https://western-youth-tech-foundation.vercel.app/sitemap.xml

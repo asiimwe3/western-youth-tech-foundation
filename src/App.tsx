@@ -25,7 +25,69 @@ const queryClient = new QueryClient();
 
 const PAGES_WITHOUT_FOOTER = ["/login", "/dashboard"];
 
+import { useEffect } from "react";
+import { useLocation } from "wouter";
+
+const PAGE_META: Record<string, { title: string; desc: string }> = {
+  "/": {
+    title: "Western Youth Tech Foundation | Free Digital & Vocational Skills Training in Uganda",
+    desc: "Income-ready digital and vocational skills for young Ugandans — starting in Kyenjojo, scaling across the Tooro region. Sponsor a student for $150."
+  },
+  "/founders-story": {
+    title: "Founder's Story — The Network Is Here. The Knowledge Is Not. | WYTF",
+    desc: "Uganda's connectivity is not the challenge — the skills gap and lack of cyber-safety knowledge is. Read Asiimwe Derick's letter on why 40 million connections arrived without a manual."
+  },
+  "/register": {
+    title: "Apply Now — Join a Free Tech Training Cohort in Kyenjojo | WYTF",
+    desc: "Apply for ICT and vocational training at Western Youth Tech Foundation's Kyenjojo hub. Web development, data analysis, digital marketing, and trades — cohorts keep 50/50 gender parity."
+  },
+  "/programs": {
+    title: "Training Programs — Web Dev, Data Analysis, Digital Marketing | WYTF",
+    desc: "Four program tracks co-designed with working engineers from DeryCode: Web & App Development, Data Analysis, Digital Marketing, and vocational trades with digital foundations."
+  },
+  "/about": {
+    title: "About Us — Uganda's Next Technology Corridor | WYTF",
+    desc: "Uganda's under-30 majority is a high-yield investment, not a charity case. Learn how WYTF is building Western Uganda into the country's next technology corridor."
+  },
+  "/vision-mission": {
+    title: "Vision & Mission — Opportunity Lives Next Door | WYTF",
+    desc: "A Uganda where talent is born everywhere and opportunity lives next door. Hubs across Tooro, industry-aligned curricula, and employment pipelines for every graduate."
+  },
+  "/fundraising": {
+    title: "Donate — Train a Ugandan Youth for $150 | WYTF",
+    desc: "Transparent impact metrics, graduate income tracking, and first-look hiring access for partners. $150 trains one student. Invest in Uganda's digital generation."
+  },
+  "/savings": {
+    title: "Save & Invest — Youth Savings Groups | WYTF",
+    desc: "Savings and investment groups for young Ugandans building capital together — financial literacy, collective savings, and small business micro-investment."
+  },
+  "/board": {
+    title: "Board & Leadership | Western Youth Tech Foundation",
+    desc: "Meet the team leading Western Youth Tech Foundation's mission across the Tooro region."
+  }
+};
+
+function usePageMeta() {
+  const [location] = useLocation();
+  useEffect(() => {
+    const meta = PAGE_META[location.replace(/\/$/, "")] || PAGE_META["/"];
+    document.title = meta.title;
+    let tag = document.querySelector('meta[name="description"]');
+    if (!tag) {
+      tag = document.createElement("meta");
+      tag.setAttribute("name", "description");
+      document.head.appendChild(tag);
+    }
+    tag.setAttribute("content", meta.desc);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    ogTitle && ogTitle.setAttribute("content", meta.title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    ogDesc && ogDesc.setAttribute("content", meta.desc);
+  }, [location]);
+}
+
 function Router() {
+  usePageMeta();
   const path = typeof window !== "undefined" ? window.location.pathname : "/";
   const hideFooter = PAGES_WITHOUT_FOOTER.some((p) => path.endsWith(p));
 
