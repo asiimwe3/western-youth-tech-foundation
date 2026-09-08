@@ -19,6 +19,8 @@ export function Navbar() {
     { href: "/savings", label: "Save & Invest" },
     { href: "/board", label: "Board" },
     { href: "/founders-story", label: "Founder's Story" },
+    { href: "/insights", label: "Insights" },
+    { href: "/faq", label: "FAQ" },
   ];
 
   async function handleLogout() {

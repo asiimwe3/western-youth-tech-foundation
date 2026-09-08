@@ -2,5 +2,56 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/"
+    },
+    {
+      "source": "/donate",
+      "destination": "/fundraising"
+    },
+    {
+      "source": "/apply",
+      "destination": "/register"
+    },
+    {
+      "source": "/founder",
+      "destination": "/founders-story"
+    },
+    {
+      "source": "/blog",
+      "destination": "/insights"
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(?:webp|png|jpg|svg|ico))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
 }

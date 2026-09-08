@@ -49,6 +49,12 @@ export function Footer() {
                 <Link href="/vision-mission" className="text-primary-foreground/80 hover:text-accent transition-colors" data-testid="link-footer-vision">Vision & Mission</Link>
               </li>
               <li>
+                <Link href="/insights" className="text-primary-foreground/80 hover:text-accent transition-colors" data-testid="link-footer-insights">Insights &amp; Guides</Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-primary-foreground/80 hover:text-accent transition-colors" data-testid="link-footer-faq">FAQ</Link>
+              </li>
+              <li>
                 <Link href="/founders-story" className="text-primary-foreground/80 hover:text-accent transition-colors" data-testid="link-footer-founder">Founder's Story</Link>
               </li>
               <li>
@@ -96,11 +102,15 @@ export function Footer() {
           </div>
         </div>
         
+        <p className="mt-6 text-xs text-primary-foreground/60 text-center md:text-left">
+          Free ICT and vocational training for youth across Kyenjojo, Kabarole, Kyegegwa, Kamwenge, Bunyangabu, Ntoroko, and the wider Tooro region of Western Uganda.
+        </p>
+        
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
           <p>&copy; {new Date().getFullYear()} Western Youth Tech Foundation. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors" data-testid="link-privacy">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors" data-testid="link-terms">Terms of Service</a>
+            <Link href="/privacy" className="hover:text-white transition-colors" data-testid="link-privacy">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors" data-testid="link-terms">Terms of Service</Link>
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-primary-foreground/10 flex justify-center">

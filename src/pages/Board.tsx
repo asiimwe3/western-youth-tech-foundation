@@ -9,7 +9,7 @@ export default function Board() {
       title: "Chief Executive Officer (CEO)",
       role: "Founder & Executive Lead",
       bio: "The visionary behind Western Youth Tech Foundation, Asiimwe Derick established the organization in Kyenjojo District to address the critical digital skills gap affecting Uganda's youth. He oversees all strategic operations, partnership development, and regional program deployments across the region.",
-      image: "/derick-asiimwe.jpg",
+      image: "/derick-asiimwe.webp",
       mail: "deriick.asimwe849@gmail.com"
     },
     {
@@ -17,7 +17,7 @@ export default function Board() {
       title: "Chair of the Board",
       role: "Technology Education Expert",
       bio: "Brings 20 years of experience designing scalable tech curricula for underserved populations across East and West Africa. Sarah chairs the International Board of Directors and oversees global compliance and macro policy authorization.",
-      image: "/board-sarah.png",
+      image: "/board-sarah.webp",
       linkedin: "#",
       twitter: "#"
     },
@@ -26,7 +26,7 @@ export default function Board() {
       title: "Vice Chair",
       role: "Senior Engineering Manager",
       bio: "A self-taught developer who rose to engineering leadership at a Fortune 500 tech firm. Marcus champions our mentorship and career placement initiatives, helping graduates break into the international remote workforce.",
-      image: "/board-marcus.png",
+      image: "/board-marcus.webp",
       linkedin: "#",
       twitter: "#"
     },
@@ -35,7 +35,7 @@ export default function Board() {
       title: "Secretary",
       role: "Youth Development Specialist",
       bio: "Amara's research focuses on the intersection of cognitive psychology and digital literacy in African youth populations. She ensures our programs are developmentally appropriate, gender-inclusive, and aligned with community welfare standards.",
-      image: "/board-amara.png",
+      image: "/board-amara.webp",
       linkedin: "#",
       mail: "#"
     },
@@ -44,7 +44,7 @@ export default function Board() {
       title: "Treasurer",
       role: "Financial Advisor & Philanthropist",
       bio: "Managing partner at a leading wealth management firm, James oversees the Foundation's financial health, endowments, and strategic growth fund. He ensures all financial deployments meet international transparency standards with rigorous annual independent auditing.",
-      image: "/board-james.png",
+      image: "/board-james.webp",
       linkedin: "#"
     },
     {
@@ -52,7 +52,7 @@ export default function Board() {
       title: "Program Director",
       role: "Data Science & Curriculum Lead",
       bio: "Priya designed our flagship Data Analysis & Business Intelligence curriculum. She bridges the gap between academic theory and practical, industry-ready data skills, ensuring our graduates are competitive in the global analytics market.",
-      image: "/board-priya.png",
+      image: "/board-priya.webp",
       linkedin: "#",
       twitter: "#"
     },
@@ -61,7 +61,7 @@ export default function Board() {
       title: "Director of Community Outreach",
       role: "Community & Regional Relations",
       bio: "Deeply rooted in the communities we serve, Michael coordinates community radio sensitization campaigns, tribal leadership outreach, and builds the vital partnerships with local schools and district councils that make our programs accessible.",
-      image: "/board-michael.png",
+      image: "/board-michael.webp",
       linkedin: "#",
       mail: "#"
     }
@@ -142,6 +142,8 @@ export default function Board() {
                     <img 
                       src={member.image} 
                       alt={member.name} 
+                      width="700" height="700"
+                      loading="lazy" decoding="async"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-multiply" />

@@ -38,35 +38,142 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NGO",
-      "name": "Western Youth Tech Foundation",
-      "alternateName": "WYTF",
-      "url": "https://western-youth-tech-foundation.vercel.app/",
-      "logo": "https://western-youth-tech-foundation.vercel.app/wytf-logo-full.png",
-      "image": "https://western-youth-tech-foundation.vercel.app/og-image.png",
-      "description": "Nonprofit equipping young Ugandans in the Tooro region with income-ready digital and vocational skills, then connecting them to jobs, clients, and capital.",
-      "foundingDate": "2026",
-      "founder": {
-        "@type": "Person",
-        "name": "Asiimwe Derick",
-        "jobTitle": "Founder & Executive Lead",
-        "url": "https://derycode.publicvm.com/"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Kyenjojo",
-        "addressRegion": "Tooro",
-        "addressCountry": "UG"
-      },
-      "areaServed": ["Kyenjojo", "Kabarole", "Kyegegwa", "Kamwenge", "Kasese", "Bundibugyo", "Uganda"],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Intake & Admissions",
-        "telephone": "+256762306675",
-        "availableLanguage": ["English", "Runyoro-Rutooro", "Luganda"]
-      },
-      "knowsAbout": ["digital skills training", "web development", "data analysis", "digital marketing", "vocational training", "youth empowerment", "cyber safety"],
-      "sameAs": ["https://derycode.publicvm.com/", "https://github.com/asiimwe3/western-youth-tech-foundation"]
+      "@graph": [
+        {
+          "@type": "NGO",
+          "@id": "https://western-youth-tech-foundation.vercel.app/#organization",
+          "name": "Western Youth Tech Foundation",
+          "alternateName": ["WYTF", "Western Youth Tech"],
+          "url": "https://western-youth-tech-foundation.vercel.app/",
+          "logo": "https://western-youth-tech-foundation.vercel.app/wytf-logo-full.png",
+          "image": "https://western-youth-tech-foundation.vercel.app/og-image.png",
+          "description": "Nonprofit equipping young Ugandans in the Tooro region with income-ready digital and vocational skills, then connecting them to jobs, clients, and capital.",
+          "slogan": "The Network Is Here. The Knowledge Is Not.",
+          "foundingDate": "2026",
+          "founder": { "@id": "https://western-youth-tech-foundation.vercel.app/#founder" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kyenjojo",
+            "addressRegion": "Tooro Region",
+            "addressCountry": "UG"
+          },
+          "areaServed": [
+            {"@type": "AdministrativeArea", "name": "Kyenjojo District, Uganda"},
+            {"@type": "AdministrativeArea", "name": "Kabarole District, Uganda"},
+            {"@type": "AdministrativeArea", "name": "Kyegegwa District, Uganda"},
+            {"@type": "AdministrativeArea", "name": "Kamwenge District, Uganda"},
+            {"@type": "AdministrativeArea", "name": "Bunyangabu District, Uganda"},
+            {"@type": "AdministrativeArea", "name": "Ntoroko District, Uganda"},
+            {"@type": "AdministrativeArea", "name": "Tooro Region, Uganda"}
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "Intake & Admissions",
+              "telephone": "+256762306675",
+              "availableLanguage": ["English", "Runyoro-Rutooro", "Luganda"]
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "Partnerships & Donations",
+              "telephone": "+256762306675",
+              "availableLanguage": ["English"]
+            }
+          ],
+          "knowsAbout": ["digital skills training", "free ICT training Uganda", "web development", "data analysis", "digital marketing", "vocational training", "youth empowerment", "cybersecurity awareness", "online safety", "digital entrepreneurship"],
+          "sameAs": ["https://derycode.publicvm.com/", "https://github.com/asiimwe3/western-youth-tech-foundation"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://western-youth-tech-foundation.vercel.app/#website",
+          "url": "https://western-youth-tech-foundation.vercel.app/",
+          "name": "Western Youth Tech Foundation",
+          "publisher": { "@id": "https://western-youth-tech-foundation.vercel.app/#organization" },
+          "inLanguage": "en",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://western-youth-tech-foundation.vercel.app/insights?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://western-youth-tech-foundation.vercel.app/#founder",
+          "name": "Asiimwe Derick",
+          "givenName": "Derick",
+          "familyName": "Asiimwe",
+          "jobTitle": "Founder & Executive Lead",
+          "description": "Ugandan software developer and social entrepreneur. Founder of DeryCode Technologies (100+ delivered projects) and the Western Youth Tech Foundation, working to close Uganda's digital skills gap from Kyenjojo.",
+          "url": "https://western-youth-tech-foundation.vercel.app/founders-story",
+          "image": "https://western-youth-tech-foundation.vercel.app/derick-asiimwe.webp",
+          "worksFor": { "@id": "https://western-youth-tech-foundation.vercel.app/#organization" },
+          "knowsAbout": ["software development", "web development", "fintech", "digital skills training", "youth empowerment in Uganda"],
+          "address": { "@type": "PostalAddress", "addressLocality": "Kyenjojo", "addressCountry": "UG" },
+          "sameAs": ["https://derycode.publicvm.com/", "https://github.com/asiimwe3"]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://western-youth-tech-foundation.vercel.app/#webpage",
+          "url": "https://western-youth-tech-foundation.vercel.app/",
+          "name": "Western Youth Tech Foundation | Free Digital & Vocational Skills Training in Uganda",
+          "isPartOf": { "@id": "https://western-youth-tech-foundation.vercel.app/#website" },
+          "about": { "@id": "https://western-youth-tech-foundation.vercel.app/#organization" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "Course",
+          "name": "Web & App Development",
+          "description": "Full-stack web and mobile app development training co-designed with working engineers from DeryCode Technologies — HTML, CSS, JavaScript, React, backend basics, and real client projects.",
+          "provider": { "@id": "https://western-youth-tech-foundation.vercel.app/#organization" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "onsite",
+            "location": { "@type": "Place", "name": "Central Tech Hub, Kyenjojo", "address": { "@type": "PostalAddress", "addressLocality": "Kyenjojo", "addressCountry": "UG" } },
+            "instructor": { "@type": "Person", "name": "DeryCode Technologies engineers" }
+          },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "UGX", "category": "Scholarship-funded" },
+          "url": "https://western-youth-tech-foundation.vercel.app/programs"
+        },
+        {
+          "@type": "Course",
+          "name": "Data Analysis",
+          "description": "Practical data skills for Uganda's digitizing economy — spreadsheets, databases, visualization, and reporting for banks, SACCOs, NGOs, and businesses.",
+          "provider": { "@id": "https://western-youth-tech-foundation.vercel.app/#organization" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "onsite",
+            "location": { "@type": "Place", "name": "Central Tech Hub, Kyenjojo", "address": { "@type": "PostalAddress", "addressLocality": "Kyenjojo", "addressCountry": "UG" } }
+          },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "UGX", "category": "Scholarship-funded" },
+          "url": "https://western-youth-tech-foundation.vercel.app/programs"
+        },
+        {
+          "@type": "Course",
+          "name": "Digital Marketing",
+          "description": "Income-ready digital marketing for real Ugandan businesses — social media management, content, advertising, analytics, and cyber-safe practices.",
+          "provider": { "@id": "https://western-youth-tech-foundation.vercel.app/#organization" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "onsite",
+            "location": { "@type": "Place", "name": "Central Tech Hub, Kyenjojo", "address": { "@type": "PostalAddress", "addressLocality": "Kyenjojo", "addressCountry": "UG" } }
+          },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "UGX", "category": "Scholarship-funded" },
+          "url": "https://western-youth-tech-foundation.vercel.app/programs"
+        },
+        {
+          "@type": "Course",
+          "name": "Advanced Vocational & Skilled Trades",
+          "description": "Electrical installation, solar deployment, mechanical repair, and agro-tech — trades powering Western Uganda's farms, factories, and homes, taught with digital foundations.",
+          "provider": { "@id": "https://western-youth-tech-foundation.vercel.app/#organization" },
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "onsite",
+            "location": { "@type": "Place", "name": "Central Tech Hub, Kyenjojo", "address": { "@type": "PostalAddress", "addressLocality": "Kyenjojo", "addressCountry": "UG" } }
+          },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "UGX", "category": "Scholarship-funded" },
+          "url": "https://western-youth-tech-foundation.vercel.app/programs"
+        }
+      ]
     }
     </script>
   </head>

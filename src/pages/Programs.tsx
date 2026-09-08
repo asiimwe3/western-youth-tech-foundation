@@ -20,7 +20,7 @@ export default function Programs() {
         "Freelance client acquisition strategies"
       ],
       curriculum: ["UI/UX Fundamentals", "HTML5 & CSS3 Mastery", "JavaScript & Modern Frameworks", "Responsive Design", "CMS & Deployment", "Portfolio Development"],
-      image: "/program-web.png",
+      image: "/program-web.webp",
       tag: "Most Popular",
       icon: <Code2 className="h-6 w-6" />,
       color: "text-primary"
@@ -38,7 +38,7 @@ export default function Programs() {
         "Business intelligence reporting"
       ],
       curriculum: ["Excel & Google Sheets Mastery", "SQL Foundations", "Data Cleaning & Processing", "Python for Data Analysis", "Visualization Tools", "BI Reporting"],
-      image: "/program-data.png",
+      image: "/program-data.webp",
       tag: "High Demand",
       icon: <BarChart3 className="h-6 w-6" />,
       color: "text-secondary"
@@ -56,7 +56,7 @@ export default function Programs() {
         "International SMB client readiness"
       ],
       curriculum: ["SEO & Content Strategy", "Social Media Marketing", "Paid Advertising (Meta & Google)", "Email Marketing", "Analytics & CRO", "Client Management"],
-      image: "/program-marketing.png",
+      image: "/program-marketing.webp",
       tag: "Global Reach",
       icon: <Megaphone className="h-6 w-6" />,
       color: "text-accent"
@@ -74,7 +74,7 @@ export default function Programs() {
         "Local enterprise ownership readiness"
       ],
       curriculum: ["Electrical Installation Basics", "Solar Panel & Grid Systems", "Mechanical Maintenance", "Agro-Tech Operations", "Safety & Compliance", "Enterprise Management"],
-      image: "/program-vocational.png",
+      image: "/program-vocational.webp",
       tag: "Local Impact",
       icon: <Wrench className="h-6 w-6" />,
       color: "text-primary"
@@ -135,7 +135,7 @@ export default function Programs() {
                 <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow">
                   <div className="grid grid-cols-1 lg:grid-cols-12">
                     <div className="lg:col-span-4 h-56 lg:h-auto">
-                      <img src={program.image} alt={program.title} className="w-full h-full object-cover" />
+                      <img src={program.image} alt={program.title} width="900" height="490" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                     </div>
                     <div className="lg:col-span-8 flex flex-col">
                       <CardHeader className="pb-3">

@@ -18,6 +18,13 @@ import Board from "@/pages/Board";
 import Register from "@/pages/Register";
 import Savings from "@/pages/Savings";
 import FoundersStory from "@/pages/FoundersStory";
+import Faq from "@/pages/Faq";
+import Insights from "@/pages/Insights";
+import ArticlePage from "@/pages/ArticlePage";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { getArticle } from "@/data/articles";
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
 import AuthPage from "@/pages/AuthPage";
 import Dashboard from "@/pages/Dashboard";
 
@@ -61,6 +68,14 @@ const PAGE_META: Record<string, { title: string; desc: string }> = {
     title: "Save & Invest — Youth Savings Groups | WYTF",
     desc: "Savings and investment groups for young Ugandans building capital together — financial literacy, collective savings, and small business micro-investment."
   },
+  "/faq": {
+    title: "FAQ — Free ICT Training in Kyenjojo, Uganda | WYTF",
+    desc: "Is the ICT training really free? Who can apply? What programs are offered? Answers for Ugandan youth on free digital skills training, cyber-safety, and how to apply in Kyenjojo."
+  },
+  "/insights": {
+    title: "Insights & Free Guides — Coding, Online Safety, Digital Careers | WYTF",
+    desc: "Free practical guides for Uganda's digital generation: learn coding in Uganda, avoid online scams, earn online safely beyond social media, and close the digital skills gap."
+  },
   "/board": {
     title: "Board & Leadership | Western Youth Tech Foundation",
     desc: "Meet the team leading Western Youth Tech Foundation's mission across the Tooro region."
@@ -70,7 +85,12 @@ const PAGE_META: Record<string, { title: string; desc: string }> = {
 function usePageMeta() {
   const [location] = useLocation();
   useEffect(() => {
-    const meta = PAGE_META[location.replace(/\/$/, "")] || PAGE_META["/"];
+    const clean = location.replace(/\/$/, "");
+    const articleMatch = clean.match(/^\/insights\/(.+)$/);
+    const article = articleMatch ? getArticle(articleMatch[1]) : undefined;
+    const meta = article
+      ? { title: article.title + " | WYTF", desc: article.excerpt }
+      : PAGE_META[clean] || PAGE_META["/"];
     document.title = meta.title;
     let tag = document.querySelector('meta[name="description"]');
     if (!tag) {
@@ -94,6 +114,7 @@ function Router() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
+      <Breadcrumbs />
       <main className="flex-grow">
         <Switch>
           <Route path="/" component={Home} />
@@ -103,6 +124,11 @@ function Router() {
           <Route path="/fundraising" component={Fundraising} />
           <Route path="/board" component={Board} />
           <Route path="/founders-story" component={FoundersStory} />
+          <Route path="/faq" component={Faq} />
+          <Route path="/insights" component={Insights} />
+          <Route path="/insights/:slug" component={ArticlePage} />
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/terms" component={Terms} />
           <Route path="/register" component={Register} />
           <Route path="/savings" component={Savings} />
           <Route path="/login" component={AuthPage} />

@@ -83,7 +83,7 @@ export default function About() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-              <img src="/about-bg.png" alt="Students learning at community center in Kyenjojo" className="w-full h-full object-cover" />
+              <img src="/about-bg.webp" alt="Students learning at a community center in Kyenjojo, Uganda" width="1400" height="763" loading="lazy" decoding="async" className="w-full h-full object-cover" />
             </div>
             
             <div className="space-y-6">

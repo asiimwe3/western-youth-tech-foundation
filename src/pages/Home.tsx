@@ -20,8 +20,10 @@ export default function Home() {
       <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-primary/90">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/hero-bg.png" 
-            alt="Youth collaborating on technology" 
+            src="/hero-bg.webp" 
+            alt="Youth collaborating on technology at the Western Youth Tech Foundation hub in Kyenjojo, Uganda"
+            width="1408" height="768"
+            fetchPriority="high" decoding="async"
             className="w-full h-full object-cover opacity-30 mix-blend-overlay"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent" />
@@ -108,25 +110,25 @@ export default function Home() {
                 title: "Full-Stack Web Development",
                 desc: "UI/UX principles, HTML5, CSS3, and modern JavaScript frameworks — taught by working DeryCode engineers. Students exit with a live portfolio built on real Ugandan client projects.",
                 icon: <Code className="h-6 w-6 text-primary" />,
-                image: "/program-web.png"
+                image: "/program-web.webp"
               },
               {
                 title: "Data Analysis & Business Intelligence",
                 desc: "Spreadsheets, SQL, and data visualization — the exact skills Ugandan banks, SACCOs, and SMEs are hiring and outsourcing for right now.",
                 icon: <LineChart className="h-6 w-6 text-secondary" />,
-                image: "/program-data.png"
+                image: "/program-data.webp"
               },
               {
                 title: "Digital Marketing Mastery",
                 desc: "SEO, social media, and conversion optimization. Graduates service real Ugandan SMEs — shops, hotels, schools — and can scale to international remote clients.",
                 icon: <Megaphone className="h-6 w-6 text-accent" />,
-                image: "/program-marketing.png"
+                image: "/program-marketing.webp"
               },
               {
                 title: "Advanced Vocational & Skilled Trades",
                 desc: "Electrical installation, solar deployment, mechanical repair, and agro-tech — the trades powering Western Uganda's farms, factories, and homes.",
                 icon: <Wrench className="h-6 w-6 text-primary" />,
-                image: "/program-vocational.png"
+                image: "/program-vocational.webp"
               }
             ].map((program, i) => (
               <motion.div
@@ -138,7 +140,7 @@ export default function Home() {
               >
                 <Card className="h-full overflow-hidden border-border hover:shadow-lg transition-all duration-300 group" data-testid={`program-card-${i}`}>
                   <div className="h-44 overflow-hidden relative">
-                    <img src={program.image} alt={program.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={program.image} alt={program.title} width="900" height="490" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute top-4 left-4 bg-white p-2 rounded-lg shadow-md">
                       {program.icon}
                     </div>
@@ -209,7 +211,7 @@ export default function Home() {
               className="relative"
             >
               <div className="aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-2xl relative">
-                <img src="/impact.png" alt="Students learning at community center" className="w-full h-full object-cover" />
+                <img src="/about-bg.webp" alt="Students learning computer skills at a community training center in Kyenjojo, Western Uganda" width="1400" height="763" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
               
