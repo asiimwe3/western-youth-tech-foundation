@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useLocation } from "wouter";
-import { UserPlus, CheckCircle2, AlertCircle, Loader2, CreditCard, Phone, MapPin, BookOpen, ChevronRight } from "lucide-react";
+import { UserPlus, CheckCircle, CheckCircle2, AlertCircle, Loader2, CreditCard, Phone, MapPin, BookOpen, ChevronRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -35,6 +35,7 @@ const programs = [
 export default function Register() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
   const [location] = useLocation();
 
   const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
@@ -69,6 +70,23 @@ export default function Register() {
     } finally {
       setLoading(false);
     }
+  }
+
+  if (submitted) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-accent/5 p-4">
+        <div className="max-w-md w-full text-center p-8 bg-white rounded-2xl shadow-xl border">
+          <CheckCircle className="h-16 w-16 mx-auto text-green-600 mb-4" />
+          <h2 className="text-2xl font-bold text-primary mb-2">Application Sent!</h2>
+          <p className="text-muted-foreground mb-6">
+            We've opened WhatsApp with your application details. Press send to complete it, and our team in Kyenjojo will reach out within 48 hours with next steps.
+          </p>
+          <Button asChild className="w-full">
+            <a href="/">Back to Home</a>
+          </Button>
+        </div>
+      </div>
+    );
   }
 
   if (paymentStatus === "success") {
