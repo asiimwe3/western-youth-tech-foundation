@@ -103,6 +103,18 @@ function usePageMeta() {
     ogTitle && ogTitle.setAttribute("content", meta.title);
     const ogDesc = document.querySelector('meta[property="og:description"]');
     ogDesc && ogDesc.setAttribute("content", meta.desc);
+    // Every route used to inherit the homepage canonical, so Google folded deep
+    // pages into "/" and never ranked them. Point each route at itself.
+    const url = "https://western-youth-tech-foundation.vercel.app" + (clean || "/");
+    let canon = document.querySelector('link[rel="canonical"]');
+    if (!canon) {
+      canon = document.createElement("link");
+      canon.setAttribute("rel", "canonical");
+      document.head.appendChild(canon);
+    }
+    canon.setAttribute("href", url);
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    ogUrl && ogUrl.setAttribute("content", url);
   }, [location]);
 }
 
